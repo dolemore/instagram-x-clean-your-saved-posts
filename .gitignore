@@ -1,0 +1,7 @@
+browser_profile/
+ig_profil/
+downloads/
+notebook_export/
+__pycache__/
+*.pyc
+error_*.png
