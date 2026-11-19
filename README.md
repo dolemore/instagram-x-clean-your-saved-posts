@@ -3,8 +3,20 @@
 Save your Instagram saved posts and X (Twitter) bookmarks to your PC, then clear them from your account.
 
 - **Download**: every image and video, including all slides of carousel posts, at the best available quality.
-- **Clean**: un-save only the posts that are fully on your disk. Nothing is removed unless you pass `--apply`.
+- **Clean**: un-save only the posts that are fully on your disk. The Python scripts remove nothing unless you pass `--apply`; the extension asks for a confirmation first.
 - **Remember**: export captions and links as Markdown to use as a NotebookLM source.
+
+## Chrome extension
+
+The [`extension/`](extension/README.md) folder is a Chrome extension (Manifest V3) that does the same without Python or Playwright. It works in the tab where you are already logged in, saves into your Downloads folder and cleans only the posts whose files are fully on disk. Its interface is English and Turkish.
+
+1. Open `chrome://extensions`, turn on **Developer mode**, click **Load unpacked** and pick the `extension/` folder.
+2. Open instagram.com or x.com, logged in, and click the extension icon.
+3. Try it with *First N posts* set to 3: **Download**, check the files, then tick the backup box and **Clean**.
+
+Details, safety rules and limits are in [extension/README.md](extension/README.md) ([Türkçe](extension/README.tr.md)). The privacy policy is [PRIVACY.md](PRIVACY.md). Chrome Web Store text and the packaging command are in [store/listing.md](store/listing.md). The Python scripts below remain available.
+
+## Python scripts
 
 The scripts drive a real browser window with [Playwright](https://playwright.dev/python/). You log in by hand in that window; the scripts never see or store your password.
 
