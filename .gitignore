@@ -5,3 +5,4 @@ notebook_export/
 __pycache__/
 *.pyc
 error_*.png
+dist/

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clean Your Saved Posts</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <header class="head">
+        <img src="icons/icon48.png" alt="" width="32" height="32">
+        <div>
+          <h1 data-i18n="extName"></h1>
+          <p id="tabInfo" class="muted"></p>
+        </div>
+      </header>
+
+      <section class="card">
+        <label class="field">
+          <span data-i18n="labelLimit"></span>
+          <input id="limit" type="number" min="1" step="1" inputmode="numeric" data-i18n-placeholder="placeholderLimit">
+        </label>
+        <p id="hintLimit" class="hint"></p>
+        <label class="field" id="xUrlRow" hidden>
+          <span data-i18n="labelXUrl"></span>
+          <input id="xUrl" type="url" spellcheck="false" autocomplete="off">
+        </label>
+        <p id="hintXUrl" class="hint" data-i18n="hintXUrl" hidden></p>
+      </section>
+
+      <section class="actions">
+        <button id="btnDownload" class="btn primary" type="button" data-i18n="btnDownload"></button>
+        <div class="card danger-zone">
+          <p class="warn" data-i18n="warnClean"></p>
+          <label class="check">
+            <input id="chkBackup" type="checkbox">
+            <span data-i18n="chkBackup"></span>
+          </label>
+          <button id="btnClean" class="btn danger" type="button" data-i18n="btnClean"></button>
+        </div>
+        <button id="btnExport" class="btn" type="button" data-i18n="btnExport"></button>
+      </section>
+
+      <p id="notice" class="notice" role="alert" hidden></p>
+
+      <section id="jobCard" class="card" hidden>
+        <div class="row">
+          <strong id="jobStatus" aria-live="polite"></strong>
+          <button id="btnStop" class="btn small" type="button" data-i18n="btnStop" hidden></button>
+        </div>
+        <p id="jobPhase" class="muted"></p>
+        <progress id="jobBar" max="1" hidden></progress>
+        <ul id="jobCounters" class="chips"></ul>
+        <p id="jobSummary" class="summary"></p>
+        <p id="jobError" class="error" role="alert"></p>
+        <ol id="jobLog" class="log"></ol>
+        <p id="jobKeepTab" class="hint" data-i18n="hintKeepTab" hidden></p>
+      </section>
+
+      <section id="cardStats" class="card" hidden>
+        <h2 id="titleStats"></h2>
+        <dl class="stats">
+          <dt data-i18n="statPosts"></dt><dd id="stPosts"></dd>
+          <dt data-i18n="statDownloaded"></dt><dd id="stDownloaded"></dd>
+          <dt data-i18n="statReady"></dt><dd id="stReady"></dd>
+          <dt data-i18n="statCleaned"></dt><dd id="stCleaned"></dd>
+          <dt data-i18n="statIncomplete"></dt><dd id="stIncomplete"></dd>
+        </dl>
+      </section>
+
+      <footer>
+        <button id="btnReset" class="link" type="button" data-i18n="btnReset"></button>
+      </footer>
+    </main>
+    <script src="lib/common.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
