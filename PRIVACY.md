@@ -39,7 +39,7 @@ The posts you download belong to their authors. Use the extension on your own ac
 
 ## Changes and contact
 
-If this policy changes, the new version and its date will be published at this address. Questions: <add a contact address or issue-tracker URL before publishing>.
+If this policy changes, the new version and its date will be published at this address. Questions: mrtkry@yahoo.com.
 
 ---
 
@@ -84,4 +84,4 @@ Tek ağ istekleri, istediğiniz işi yapmak için kendi tarayıcınızın instag
 
 ## Değişiklikler ve iletişim
 
-Politika değişirse yeni sürümü ve tarihi bu adreste yayımlanır. Sorular: <yayımlamadan önce bir iletişim adresi ya da sorun takip adresi ekleyin>.
+Politika değişirse yeni sürümü ve tarihi bu adreste yayımlanır. Sorular: mrtkry@yahoo.com.

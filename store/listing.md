@@ -10,7 +10,7 @@ Text to paste into the Developer Dashboard, and the steps to build and submit th
 | Category | Productivity |
 | Languages | English (default), Turkish |
 | Visibility | Unlisted is a good first step: installable only from the link, still reviewed. |
-| Privacy policy URL | A **public** address of [PRIVACY.md](../PRIVACY.md). The GitHub repository is private, so its file page is not reachable by the reviewers. Use a public Gist, a small public repository that holds only `PRIVACY.md`, or GitHub Pages (needs a public repository on the free plan). Fill the contact line in `PRIVACY.md` first. |
+| Privacy policy URL | https://gist.github.com/dolemore/1891fb537f0bd54e0a3e047927b20d51, a public copy of [PRIVACY.md](../PRIVACY.md). The GitHub repository is private, so its own file page is not reachable by the reviewers. Edit the gist whenever `PRIVACY.md` changes, and keep its file name `PRIVACY.md` so GitHub renders it as Markdown. |
 
 ## Single purpose
 
@@ -104,7 +104,7 @@ PowerShell 7 can do it with `Compress-Archive`; Windows PowerShell 5.1 writes ba
 
 ## Submit
 
-1. Make `PRIVACY.md` available at a public URL, with the contact line filled in.
+1. Check that the public gist still matches `PRIVACY.md`.
 2. Register as a Chrome Web Store developer (one-time fee of 5 USD) and open the Developer Dashboard.
 3. Create a new item and upload the zip.
 4. Paste the texts above, upload the screenshots, fill the Privacy practices tab, set the visibility, and submit for review.
